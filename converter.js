@@ -15,13 +15,11 @@ function convert(event){
         alert ("temperature cannot be empty")
     
     }else{
-        const convertion_rate = 375
-        let farenheight = Number(temperature) + convertion_rate
-
+        let farenheight = (Number(temperature)* (9/5)) + 32
 
         document.querySelector(".farenheight").innerHTML = temperature + ("⁰c")
         document.querySelector(".celcius").innerHTML = farenheight + ("⁰f")
-    }9 
+    }
 }
 
 const format = document.querySelector("button")
